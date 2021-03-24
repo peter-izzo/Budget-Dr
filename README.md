@@ -34,6 +34,7 @@ There is no installation for this project
 
 ## Usage :warning:
 Go to the following site to view/play with the deployed version of this app:
+<br>
 https://peaceful-gorge-03319.herokuapp.com/
 
 ## License :scroll:
