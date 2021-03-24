@@ -52,7 +52,7 @@ No tests for this project
 
 ### Screenshot of Running App
 
-![running application](./assets/images/app.png)
+![running application](./public/assets/images/app.png)
 
 ## Questions :question:
 ### For any issues please reach out to Peter Izzo
