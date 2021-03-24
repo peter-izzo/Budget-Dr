@@ -7,12 +7,9 @@ const FILES_TO_CACHE = [
     "/assets/css/style.css",
     "/assets/icons/icon-192x192.png",
     "/assets/icons/icon-512x512.png",
-    "/assets/img/icons/budget.png",
     "https://fonts.googleapis.com/icon?family=Material+Icons",
-    "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
     "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
-    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"
 ];
 
 const STATIC_CACHE = "static-cache-v1";
@@ -22,9 +19,9 @@ const RUNTIME_CACHE = "runtime-cache";
 self.addEventListener("install", event => {
     event.waitUntil(
         caches
-        .open(STATIC_CACHE)
-        .then(cache => cache.addAll(FILES_TO_CACHE))
-        .then(() => self.skipWaiting())
+            .open(STATIC_CACHE)
+            .then(cache => cache.addAll(FILES_TO_CACHE))
+            .then(() => self.skipWaiting())
     );
 });
 
